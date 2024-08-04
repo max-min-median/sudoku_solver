@@ -23,3 +23,7 @@ Enter a string representing the board.
 ❌ `53.,7.,..6..195..,.98..,.6.8...6...34..8.3..17...2...6.6....28....419..5....8..79`
 
 ❌ `53..7..../6..195...\.98....6./8...6...3\4..8.3..1/7...2...6\.6....28./...419..5\....8..79`
+
+## How it works
+- Backtracking algorithm (using recursion)
+- At each stage, arc consistency is maintained by removing relevant 'pencil markings'. I believe the name for this is AC-3.
