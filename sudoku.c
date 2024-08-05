@@ -69,8 +69,7 @@ board solve_sudoku(board b) {
             if (!(NUM_TO_BITS(try_num) & b.grid[row][col])) continue;
             board try_board = b;
             FIX_NUMBER(try_board, row, col, try_num);
-            if (try_board.status & INSOLUBLE)
-                continue;
+            if (try_board.status & INSOLUBLE) continue;
             try_board = solve_sudoku(try_board);
             if (try_board.status & SOLVED) return try_board;
         )
